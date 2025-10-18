@@ -1,0 +1,363 @@
+﻿<Window x:Class="ClassExercise2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClassExercise2"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" 
+        Height="450" 
+        Width="800" 
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" >
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!-- Loan number label and textbox -->
+        <Label 
+            Name="LblLoanNumber"
+            Content="Loan Number:" 
+            ToolTip="Loan Number"
+            IsTabStop="False"
+            
+            FontSize="16"
+            
+            Grid.Column="0"
+            Grid.Row="0"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="0, 0, 0, 0"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <TextBox
+            Name="TxtLoanNumberInput"
+            Text=""
+            ToolTip="Input your loan number"
+            TabIndex="0"
+            
+            FontSize="16"
+            
+            Grid.Column="1"
+            Grid.Row="0"
+            
+            Height="Auto"
+            Width="Auto"
+            MinWidth="50"
+            Margin="0, 0, 0, 5"
+            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+        
+        <!-- Customer name label and textbox -->
+        <Label
+            Name="LblCustomerName"
+            Content="Customer Name: "
+            ToolTip="Customer name"
+            IsTabStop="False"
+            
+            FontSize="16"
+            
+            Grid.Column="0"
+            Grid.Row="1"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="0, 0, 0, 0"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <TextBox
+            Name="TxtCustomerNameInput"
+            Text=""
+            ToolTip="Input the customer's name here"
+            TabIndex="1"
+            
+            FontSize="16"
+            
+            Grid.Column="1"
+            Grid.Row="1"
+            
+            Height="Auto"
+            Width="Auto"
+            MinWidth="50"
+            Margin="0, 0, 0, 5"
+            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+        <!-- Customer address label and textbox -->
+        <Label 
+            Name="LblCustomerAddress"
+            Content="Customer Address: " 
+            ToolTip="Customer Address"
+            IsTabStop="False"
+            
+            FontSize="16"
+            
+            Grid.Column="0"
+            Grid.Row="2"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="0, 0, 0, 0"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <TextBox
+            Name="TxtCustomerAddressInput"
+            Text=""
+            ToolTip="Input your the customer's address"
+            TabIndex="2"
+            
+            FontSize="16"
+            
+            Grid.Column="1"
+            Grid.Row="2"
+            
+            Height="Auto"
+            Width="Auto"
+            MinWidth="50"
+            Margin="0, 0, 0, 5"
+            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+        <!-- Loan ammount label and textbox -->
+        <Label 
+            Name="LblAmount"
+            Content="Loan Amount: " 
+            ToolTip="Loan Amount"
+            IsTabStop="False"
+            
+            FontSize="16"
+            
+            Grid.Column="2"
+            Grid.Row="0"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="0, 0, 0, 0"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <TextBox
+            Name="TxtLoanAmountInput"
+            Text=""
+            ToolTip="Input your loan amount"
+            TabIndex="3"
+            
+            FontSize="16"
+            
+            Grid.Column="3"
+            Grid.Row="0"
+            
+            Height="Auto"
+            Width="Auto"
+            MinWidth="50"
+            Margin="0, 0, 0, 5"
+            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+        <!-- Interest rate label and textbox -->
+        <Label 
+            Name="LblInterestRate"
+            Content="Interest Rate: " 
+            ToolTip="Interest Rate"
+            IsTabStop="False"
+            
+            FontSize="16"
+            
+            Grid.Column="2"
+            Grid.Row="1"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="0, 0, 0, 0"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <TextBox
+            Name="TxtInterestRateInput"
+            Text=""
+            ToolTip="Input your interest rate"
+            TabIndex="4"
+            
+            FontSize="16"
+            
+            Grid.Column="3"
+            Grid.Row="1"
+            
+            Height="Auto"
+            Width="Auto"
+            MinWidth="50"
+            Margin="0, 0, 0, 5"
+            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+        <!-- Loan duration label and textbox -->
+        <Label 
+            Name="LblLoanDuration"
+            Content="Loan Duration:" 
+            ToolTip="Loan Duration"
+            IsTabStop="False"
+            
+            FontSize="16"
+            
+            Grid.Column="2"
+            Grid.Row="2"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="0, 0, 0, 0"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <TextBox
+            Name="TxtLoanDuration"
+            Text=""
+            ToolTip="Input your loan duration"
+            TabIndex="5"
+            
+            FontSize="16"
+            
+            Grid.Column="3"
+            Grid.Row="2"
+            
+            Height="Auto"
+            Width="Auto"
+            MinWidth="50"
+            Margin="0, 0, 0, 5"
+            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+
+        <!-- Loan report label and textbox -->
+        <Label 
+            Name="LblLoanReport"
+            Content="Loan Report: " 
+            ToolTip="Loan report"
+            IsTabStop="False"
+            
+            FontSize="16"
+            
+            Grid.Column="0"
+            Grid.Row="4"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="0, 0, 0, 0"
+            
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <TextBox
+            Name="TxtLoanReport"
+            Text=""
+            ToolTip="Displays the loan report"
+            TabIndex="6"
+            
+            FontSize="16"
+            
+            Grid.Column="1"
+            Grid.Row="4"
+            
+            Height="Auto"
+            Width="Auto"
+            MinWidth="50"
+            Margin="0, 0, 0, 5"
+            
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+
+        <!-- Calculate button -->
+        <Button
+            Name="BtnCalculate"
+            Content="_Calculate"
+            ToolTip="Calculate the loan. Click or press C"
+            TabIndex="7"
+            
+            FontSize="16"
+
+            Grid.Column="4"
+            Grid.Row="0"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="10, 10, 10, 10"
+
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" 
+            
+            Click="BtnCalculate_Click" />
+
+        <!-- Reset button -->
+        <Button
+            Name="BtnReset"
+            Content="_Reset"
+            ToolTip="Reset inputs. Click or press R"
+            TabIndex="8"
+            
+            FontSize="16"
+
+            Grid.Column="4"
+            Grid.Row="1"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="10, 10, 10, 10"
+
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            
+            Click="BtnReset_Click" />
+        
+        <!-- Exit button -->
+        <Button
+            Name="BtnExit"
+            Content="E_xit"
+            ToolTip="Exit program. Click or press X"
+            TabIndex="9"
+            
+            FontSize="16"
+
+            Grid.Column="4"
+            Grid.Row="2"
+            
+            Height="Auto"
+            Width="Auto"
+            Margin="10, 10, 10, 10"
+
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            
+            Click="BtnExit_Click" />
+
+    </Grid>
+</Window>
