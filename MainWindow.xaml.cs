@@ -23,7 +23,14 @@ namespace ClassExercise2
 
         private void BtnCalculate_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                Loan newLoan = new Loan();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error");
+            }
         }
 
         private void BtnReset_Click(object sender, RoutedEventArgs e)

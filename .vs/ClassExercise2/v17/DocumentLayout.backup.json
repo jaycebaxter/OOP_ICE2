@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{39C88216-03FC-4A6F-B5AF-698F45FE5D39}|ClassExercise2.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39C88216-03FC-4A6F-B5AF-698F45FE5D39}|ClassExercise2.csproj|c:\\users\\jayce\\source\\repos\\classexercise2\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C88216-03FC-4A6F-B5AF-698F45FE5D39}|ClassExercise2.csproj|solutionrelative:loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39C88216-03FC-4A6F-B5AF-698F45FE5D39}|ClassExercise2.csproj|c:\\users\\jayce\\source\\repos\\classexercise2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{39C88216-03FC-4A6F-B5AF-698F45FE5D39}|ClassExercise2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C88216-03FC-4A6F-B5AF-698F45FE5D39}|ClassExercise2.csproj|c:\\users\\jayce\\source\\repos\\classexercise2\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C88216-03FC-4A6F-B5AF-698F45FE5D39}|ClassExercise2.csproj|solutionrelative:loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,27 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Loan.cs",
               "DocumentMoniker": "C:\\Users\\Jayce\\source\\repos\\ClassExercise2\\Loan.cs",
               "RelativeDocumentMoniker": "Loan.cs",
-              "ToolTip": "C:\\Users\\Jayce\\source\\repos\\ClassExercise2\\Loan.cs*",
-              "RelativeToolTip": "Loan.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Jayce\\source\\repos\\ClassExercise2\\Loan.cs",
+              "RelativeToolTip": "Loan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T23:09:33.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Jayce\\source\\repos\\ClassExercise2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\Jayce\\source\\repos\\ClassExercise2\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T23:07:34.009Z"
+              "WhenOpened": "2025-10-14T23:07:34.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,7 +61,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Jayce\\source\\repos\\ClassExercise2\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwCUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T23:07:32.138Z",
               "EditorCaption": ""
