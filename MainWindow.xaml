@@ -35,7 +35,7 @@
             ToolTip="Loan Number"
             IsTabStop="False"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="0"
             Grid.Row="0"
@@ -53,7 +53,7 @@
             ToolTip="Input your loan number"
             TabIndex="0"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="1"
             Grid.Row="0"
@@ -73,7 +73,7 @@
             ToolTip="Customer name"
             IsTabStop="False"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="0"
             Grid.Row="1"
@@ -91,7 +91,7 @@
             ToolTip="Input the customer's name here"
             TabIndex="1"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="1"
             Grid.Row="1"
@@ -111,7 +111,7 @@
             ToolTip="Customer Address"
             IsTabStop="False"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="0"
             Grid.Row="2"
@@ -129,7 +129,7 @@
             ToolTip="Input your the customer's address"
             TabIndex="2"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="1"
             Grid.Row="2"
@@ -149,7 +149,7 @@
             ToolTip="Loan Amount"
             IsTabStop="False"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="2"
             Grid.Row="0"
@@ -167,7 +167,7 @@
             ToolTip="Input your loan amount"
             TabIndex="3"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="3"
             Grid.Row="0"
@@ -183,11 +183,11 @@
         <!-- Interest rate label and textbox -->
         <Label 
             Name="LblInterestRate"
-            Content="Interest Rate: " 
+            Content="Annual Interest Rate: " 
             ToolTip="Interest Rate"
             IsTabStop="False"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="2"
             Grid.Row="1"
@@ -205,7 +205,7 @@
             ToolTip="Input your interest rate"
             TabIndex="4"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="3"
             Grid.Row="1"
@@ -221,11 +221,11 @@
         <!-- Loan duration label and textbox -->
         <Label 
             Name="LblLoanDuration"
-            Content="Loan Duration:" 
+            Content="Loan Duration (Months):" 
             ToolTip="Loan Duration"
             IsTabStop="False"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="2"
             Grid.Row="2"
@@ -243,7 +243,7 @@
             ToolTip="Input your loan duration"
             TabIndex="5"
             
-            FontSize="16"
+            FontSize="12"
             
             Grid.Column="3"
             Grid.Row="2"
@@ -257,11 +257,11 @@
             VerticalAlignment="Center" />
 
 
-        <!-- Loan report label and textbox -->
+        <!-- Monthly payment label and textbox -->
         <Label 
             Name="LblLoanReport"
-            Content="Loan Report: " 
-            ToolTip="Loan report"
+            Content="Monthly Payment: " 
+            ToolTip="Monthly payment"
             IsTabStop="False"
             
             FontSize="16"

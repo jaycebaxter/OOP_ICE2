@@ -23,6 +23,9 @@ namespace ClassExercise2
 
         private void BtnCalculate_Click(object sender, RoutedEventArgs e)
         {
+            // Clearing the last calculation
+            TxtLoanReport.Text = "";
+
             try
             {
                 // Declaring new loan object
@@ -78,13 +81,28 @@ namespace ClassExercise2
                     MessageBox.Show("Loan duration must be a number");
                 }
 
+                // Calculates monthly payment
+                double MonthlyPayment = newLoan.CalculateMonthlyPayment();
+                TxtLoanReport.Text = MonthlyPayment.ToString();
+
+                // Disables all of the boxes after calculation
+                TxtLoanNumberInput.IsReadOnly = true;
+                TxtCustomerNameInput.IsReadOnly = true;
+                TxtCustomerAddressInput.IsReadOnly= true;
+                TxtLoanAmountInput.IsReadOnly = true;
+                TxtInterestRateInput.IsReadOnly = true;
+                TxtLoanDurationInput.IsReadOnly = true;
+                BtnCalculate.IsEnabled = false;
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error");
             }
+
         }
 
+        // Resets all text boxes
         private void BtnReset_Click(object sender, RoutedEventArgs e)
         {
             TxtLoanNumberInput.Text = "";
@@ -104,6 +122,11 @@ namespace ClassExercise2
 
             TxtLoanDurationInput.Text = "";
             TxtLoanDurationInput.IsReadOnly = false;
+
+            TxtLoanReport.Text = "";
+            TxtLoanReport.IsReadOnly = false;
+
+            BtnCalculate.IsEnabled = true;
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)

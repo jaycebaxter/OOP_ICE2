@@ -14,8 +14,21 @@ namespace ClassExercise2
         private double LoanAmount;
         private double InterestRate;
         private int LoanDuration;
+        private double MonthlyPayment;
+
 
         // Default constructor
+        public Loan()
+        {
+            LoanNumber = 0;
+            CustomerName = "";
+            CustomerAddress = "";
+            LoanAmount = 0;
+            InterestRate = 0;
+            LoanDuration = 0;
+        }
+
+        // Parameterized constructor
         public Loan(int loanNumber, string customerName,string customerAddress, double loanAmount, double interestRate, int loanDuration)
             {
                 SetLoanNumber(loanNumber);
@@ -166,9 +179,16 @@ namespace ClassExercise2
         }
 
         // Calculating the monthly payment
+        // I actually don't know if the math is right I used this formula under "find the monthly payment"
+        // https://www.calculatorsoup.com/calculators/financial/loan-calculator.php
         public double CalculateMonthlyPayment()
         {
+            double MonthlyInterestRate = (InterestRate / 100) / 12;
+            double numerator = MonthlyInterestRate * Math.Pow(1 + MonthlyInterestRate, LoanDuration);
+            double denominator = Math.Pow(1 + MonthlyInterestRate, LoanDuration) - 1;
 
+            double MonthlyPayment = LoanAmount * (numerator / denominator);
+            return MonthlyPayment;
         }
     }
 }
