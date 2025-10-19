@@ -238,7 +238,7 @@
             VerticalAlignment="Center" />
 
         <TextBox
-            Name="TxtLoanDuration"
+            Name="TxtLoanDurationInput"
             Text=""
             ToolTip="Input your loan duration"
             TabIndex="5"

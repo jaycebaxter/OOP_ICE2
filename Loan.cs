@@ -15,6 +15,17 @@ namespace ClassExercise2
         private double InterestRate;
         private int LoanDuration;
 
+        // Default constructor
+        public Loan(int loanNumber, string customerName,string customerAddress, double loanAmount, double interestRate, int loanDuration)
+            {
+                SetLoanNumber(loanNumber);
+                SetCustomerName(customerName);
+                SetCustomerAddress(customerAddress);
+                SetLoanAmount(loanAmount);
+                SetInterestRate(interestRate);
+                SetLoanDuration(loanDuration);
+            }
+            
          /// <summary>
          /// Setter for LoanNumber
          /// </summary>
@@ -152,6 +163,12 @@ namespace ClassExercise2
         public int GetLoanDuration()
         {
             return LoanDuration;
+        }
+
+        // Calculating the monthly payment
+        public double CalculateMonthlyPayment()
+        {
+
         }
     }
 }
